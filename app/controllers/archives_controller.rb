@@ -1,9 +1,12 @@
 class ArchivesController < ApplicationController
 
- def index
- end
+   def index
+     @archives = Archive.all
+   end
 
- def show
- end
- 
+   def show
+     @archive = Archive.find(params[:id])
+   end
+
+
 end

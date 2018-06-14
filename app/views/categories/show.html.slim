@@ -1,0 +1,6 @@
+table
+  - @archives.each do |archive|
+    tr
+      td = archive.id
+      td = archive.title
+      td =link_to "Showページへ" , archive_path(archive)
